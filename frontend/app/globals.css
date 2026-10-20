@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body { background: #F1F4F3; color: #16283A; }
+body { font-feature-settings: "tnum" 1; -webkit-font-smoothing: antialiased; }
+
+:focus-visible { outline: 2px solid #9C6B1C; outline-offset: 2px; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded px-3.5 py-2 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-ink text-white hover:bg-ink-soft; }
+  .btn-secondary { @apply btn border border-hairline bg-white text-ink hover:border-slate; }
+  .btn-quiet { @apply btn text-ink-soft hover:bg-white; }
+  .btn-danger { @apply btn border border-major/30 bg-white text-major hover:bg-major-light; }
+  .panel { @apply rounded-lg border border-hairline bg-white; }
+  .field { @apply w-full rounded border border-hairline bg-white px-3 py-2 text-sm text-ink placeholder:text-slate/70 focus:border-ink focus:outline-none; }
+  .label { @apply mb-1 block text-sm font-medium text-ink; }
+  .page-title { @apply font-display text-[2rem] leading-tight text-ink; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

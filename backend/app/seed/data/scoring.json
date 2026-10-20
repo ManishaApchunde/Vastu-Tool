@@ -1,0 +1,29 @@
+{
+  "rule_set_code": "baseline-3x3-v1",
+  "name": "Default scoring v1",
+  "config": {
+    "status_points": {
+      "preferred": 1.0,
+      "acceptable": 0.75
+    },
+    "issue_points": {
+      "low": 0.5,
+      "medium": 0.25,
+      "high": 0.0
+    },
+    "category_weights": {
+      "rooms": 0.3,
+      "entrance": 0.2,
+      "zones": 0.2,
+      "layout": 0.15,
+      "directions": 0.15
+    },
+    "category_labels": {
+      "rooms": "Rooms",
+      "entrance": "Entrance",
+      "zones": "Zones",
+      "layout": "Layout",
+      "directions": "Directions"
+    }
+  }
+}

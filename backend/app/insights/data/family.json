@@ -1,0 +1,29 @@
+{
+  "_comment": "Family Priority Mode. Each member role raises the importance of the rooms that matter most to that person. 'focus' areas do the same for a household goal. Multipliers change only the personalised 'family view' score and the order of advice; the official score is never changed.",
+  "multipliers": {"high": 2.0, "normal": 1.0, "low": 0.5},
+  "roles": {
+    "elderly": {"label": "Elderly parents", "label_mr": "ज्येष्ठ पालक", "room_types": ["master_bedroom", "bedroom", "toilet", "pooja"],
+                "note": "Their bedroom and nearby toilet matter most; avoid remedies that add steps or clutter to their route."},
+    "children": {"label": "Young children", "label_mr": "लहान मुले", "room_types": ["bedroom", "living"],
+                 "note": "Keep their bedroom calm and the play area in the living room uncluttered."},
+    "students": {"label": "Students", "label_mr": "विद्यार्थी", "room_types": ["study", "bedroom"],
+                 "note": "Study placement and desk direction matter most."},
+    "work_from_home": {"label": "Working from home", "label_mr": "घरून काम", "room_types": ["study", "living"],
+                       "note": "The work corner and its direction matter most."},
+    "couple": {"label": "Couple", "label_mr": "दांपत्य", "room_types": ["master_bedroom"],
+               "note": "The master bedroom is the priority room."},
+    "home_cook": {"label": "Cooks daily", "label_mr": "रोज स्वयंपाक", "room_types": ["kitchen", "dining"],
+                  "note": "Kitchen placement and the cooking range position matter most."},
+    "devotional": {"label": "Daily worship", "label_mr": "रोज पूजा", "room_types": ["pooja"],
+                   "note": "The pooja room and its facing direction matter most."}
+  },
+  "focus": {
+    "sleep": {"label": "Better sleep", "label_mr": "चांगली झोप", "room_types": ["master_bedroom", "bedroom"]},
+    "study": {"label": "Study and focus", "label_mr": "अभ्यास व एकाग्रता", "room_types": ["study"]},
+    "work": {"label": "Work and business", "label_mr": "काम व व्यवसाय", "room_types": ["study", "living"], "categories": ["entrance"]},
+    "kitchen": {"label": "Kitchen and food", "label_mr": "स्वयंपाकघर व आहार", "room_types": ["kitchen", "dining"]},
+    "worship": {"label": "Worship", "label_mr": "पूजा", "room_types": ["pooja"]},
+    "entrance": {"label": "Entrance and welcome", "label_mr": "प्रवेश व स्वागत", "categories": ["entrance"]},
+    "open_centre": {"label": "Open, airy home", "label_mr": "मोकळे, हवेशीर घर", "categories": ["zones", "layout"]}
+  }
+}

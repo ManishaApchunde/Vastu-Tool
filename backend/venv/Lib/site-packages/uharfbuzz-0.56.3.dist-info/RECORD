@@ -1,0 +1,13 @@
+uharfbuzz-0.56.3.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+uharfbuzz-0.56.3.dist-info/METADATA,sha256=JsLbXZYsLfgIRcjLAphAJ0SHB6OlG7AVfgZ10ctwicU,3676
+uharfbuzz-0.56.3.dist-info/RECORD,,
+uharfbuzz-0.56.3.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uharfbuzz-0.56.3.dist-info/WHEEL,sha256=FRc2PqCQ5QEb4dnYDa-vTGRblYk_C7wezv-6BdO8-4k,100
+uharfbuzz-0.56.3.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+uharfbuzz-0.56.3.dist-info/top_level.txt,sha256=7cR_9qHUIY8Tbh9RlhqonIA5WhZTP7Fus2kSo6wEM-I,10
+uharfbuzz/__init__.py,sha256=PpJ8B85jb5Dd3O_8fP-UnEIaGZC9xCpgXqbl9TknyTo,2761
+uharfbuzz/__pycache__/__init__.cpython-312.pyc,,
+uharfbuzz/__pycache__/_version.cpython-312.pyc,,
+uharfbuzz/_harfbuzz.pyd,sha256=KreFpANwBQl2xcocJsInS2gikLBH8kJ6ekxvyDt3Fcg,3420672
+uharfbuzz/_harfbuzz_test.pyd,sha256=sc-LWSWRr6tDySRInRBgmtUwHpgPwgofo-YEUDPIHiY,18432
+uharfbuzz/_version.py,sha256=vNlWv40VUqPnADP08HTIVK2-hw9KR4GO-q1-hoiH2Y0,554

@@ -1,0 +1,95 @@
+{
+  "_comment": "Practical metadata for each remedy in the approved catalogue, used by Vastu FitCheck, the Construction Stage Assistant and the Daily-Life Conflict Detector. 'everyday' describes the remedy's recommendation; 'structural' describes its structural_note (only used when the remedy has one). requires: arrange (move furniture or items), decor (colour, light, curtains), habit (how the space is kept), electrical, plumbing, civil (walls, floors, openings), expert (needs a practitioner or professional on site). cost_band: none | low | medium | high. disruption: none | low | high. anchor: where in the room the remedy puts something (corner code in the room's own North-up 3x3 grid), used to check doors and windows there. keep_clear: corners of the room the remedy asks to keep light and open. Codes missing here fall back to defaults derived from the remedy kind.",
+  "defaults": {
+    "everyday": {"cost_band": "low", "requires": ["arrange"], "disruption": "low"},
+    "structural": {"cost_band": "high", "requires": ["civil", "expert"], "disruption": "high"}
+  },
+  "remedies": {
+    "kitchen_ne": {
+      "everyday": {"cost_band": "medium", "requires": ["arrange", "electrical"], "disruption": "low",
+                   "anchor": {"corner": "SE", "item": "cooking range", "item_mr": "शेगडी", "heavy": false, "min_side_ft": 7}, "keep_clear": ["NE"]},
+      "structural": {"cost_band": "high", "requires": ["civil", "plumbing", "electrical", "expert"], "disruption": "high"}
+    },
+    "kitchen_misplaced": {
+      "everyday": {"cost_band": "medium", "requires": ["arrange", "electrical"], "disruption": "low",
+                   "anchor": {"corner": "SE", "item": "cooking range", "item_mr": "शेगडी", "heavy": false, "min_side_ft": 7}}
+    },
+    "bedroom_centre": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low", "keep_clear": ["C"]},
+      "structural": {"cost_band": "high", "requires": ["civil", "expert"], "disruption": "high"}
+    },
+    "bedroom_ne_se": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low",
+                   "anchor": {"corner": "SW", "item": "bed", "item_mr": "पलंग", "heavy": true, "min_side_ft": 9}, "keep_clear": ["NE"]}
+    },
+    "bedroom_light_zone": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low",
+                   "anchor": {"corner": "SW", "item": "bed", "item_mr": "पलंग", "heavy": true, "min_side_ft": 9}}
+    },
+    "toilet_ne_centre": {
+      "everyday": {"cost_band": "none", "requires": ["habit", "decor"], "disruption": "none"},
+      "structural": {"cost_band": "high", "requires": ["civil", "plumbing", "expert"], "disruption": "high"}
+    },
+    "toilet_misplaced": {
+      "everyday": {"cost_band": "medium", "requires": ["habit", "plumbing"], "disruption": "low",
+                   "anchor": {"corner": "W", "item": "WC", "item_mr": "शौचपात्र (WC)", "heavy": false}}
+    },
+    "pooja_south": {
+      "everyday": {"cost_band": "none", "requires": ["arrange", "decor"], "disruption": "none",
+                   "anchor": {"corner": "E", "item": "altar", "item_mr": "देव्हारा", "heavy": false}}
+    },
+    "pooja_west": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "none",
+                   "anchor": {"corner": "E", "item": "altar", "item_mr": "देव्हारा", "heavy": false}}
+    },
+    "living_south": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low",
+                   "anchor": {"corner": "SW", "item": "heavy furniture", "item_mr": "जड फर्निचर", "heavy": true}, "keep_clear": ["NE"]}
+    },
+    "dining_misplaced": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "none",
+                   "anchor": {"corner": "W", "item": "dining table", "item_mr": "जेवणाचे टेबल", "heavy": false, "min_side_ft": 8}}
+    },
+    "study_misplaced": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "none",
+                   "anchor": {"corner": "E", "item": "desk", "item_mr": "अभ्यासाचे टेबल", "heavy": false}}
+    },
+    "stairs_ne_centre": {
+      "everyday": {"cost_band": "low", "requires": ["habit", "decor"], "disruption": "none"},
+      "structural": {"cost_band": "high", "requires": ["civil", "expert"], "disruption": "high"}
+    },
+    "stairs_north_east": {
+      "everyday": {"cost_band": "none", "requires": ["habit"], "disruption": "none"}
+    },
+    "store_misplaced": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low",
+                   "anchor": {"corner": "SW", "item": "heavy storage", "item_mr": "जड साहित्य", "heavy": true}, "keep_clear": ["NE"]}
+    },
+    "entrance_south": {
+      "everyday": {"cost_band": "low", "requires": ["decor", "habit"], "disruption": "none"}
+    },
+    "entrance_sw": {
+      "everyday": {"cost_band": "low", "requires": ["decor"], "disruption": "none"},
+      "structural": {"cost_band": "high", "requires": ["civil", "expert"], "disruption": "high"}
+    },
+    "mark_entrance": {
+      "everyday": {"cost_band": "none", "requires": [], "disruption": "none"}
+    },
+    "centre_obstructed": {
+      "everyday": {"cost_band": "none", "requires": ["arrange", "habit"], "disruption": "low", "keep_clear": ["C"]},
+      "structural": {"cost_band": "high", "requires": ["civil", "plumbing", "expert"], "disruption": "high"}
+    },
+    "ne_cut": {
+      "everyday": {"cost_band": "low", "requires": ["decor", "habit", "expert"], "disruption": "none"}
+    },
+    "sw_cut": {
+      "everyday": {"cost_band": "none", "requires": ["arrange"], "disruption": "low"}
+    },
+    "corner_cut": {
+      "everyday": {"cost_band": "none", "requires": ["habit", "decor"], "disruption": "none"}
+    },
+    "windows_balance": {
+      "everyday": {"cost_band": "low", "requires": ["decor"], "disruption": "none"}
+    }
+  }
+}

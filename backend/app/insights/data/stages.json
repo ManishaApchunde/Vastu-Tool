@@ -1,0 +1,276 @@
+{
+  "_comment": "Construction Stage Assistant. 'cheap' lists the remedy requirement tags that are still inexpensive to act on at this stage; anything else costs more because finished work has to be undone. 'checklist' items are generic site checks for the stage; 'topic' links an item to findings in that area (rooms of these types, or a category) so it is only shown when relevant.",
+  "order": [
+    "planning",
+    "foundation",
+    "structure",
+    "services",
+    "finishing",
+    "occupied"
+  ],
+  "stages": {
+    "planning": {
+      "label": "Design / planning",
+      "label_mr": "आराखडा / नियोजन",
+      "description": "Drawings are still being finalised. Every placement can still change on paper.",
+      "cheap": [
+        "civil",
+        "plumbing",
+        "electrical",
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Confirm true North on the plot with a compass (away from steel and vehicles) and mark it on the drawing.",
+          "always": true,
+          "text_mr": "भूखंडावर होकायंत्राने (लोखंड आणि वाहनांपासून दूर) खरी उत्तर दिशा निश्चित करा आणि ती रेखाचित्रावर नोंदवा."
+        },
+        {
+          "text": "Settle the positions of the kitchen, toilets, pooja room and staircase now; they are the hardest to move later.",
+          "always": true,
+          "text_mr": "स्वयंपाकघर, शौचालये, देवघर आणि जिना यांच्या जागा आत्ताच निश्चित करा; नंतर त्या हलवणे सर्वात कठीण असते."
+        },
+        {
+          "text": "Ask the architect to keep the centre (Brahmasthan) free of toilets, staircases and heavy columns where possible.",
+          "topic": {
+            "zones": [
+              "C"
+            ]
+          },
+          "text_mr": "शक्य असल्यास मध्य भाग (ब्रह्मस्थान) शौचालय, जिना आणि जड खांबांपासून मोकळा ठेवण्यास वास्तुविशारदांना सांगा."
+        },
+        {
+          "text": "Review the main entrance position before the door frame is ordered.",
+          "topic": {
+            "category": "entrance"
+          },
+          "text_mr": "दरवाजाची चौकट मागवण्यापूर्वी मुख्य प्रवेशद्वाराची जागा पुन्हा तपासा."
+        },
+        {
+          "text": "Avoid cutting the North-East corner of the building outline.",
+          "topic": {
+            "zones": [
+              "NE"
+            ]
+          },
+          "text_mr": "इमारतीच्या रचनेत ईशान्य कोपरा कापला जाणार नाही याची काळजी घ्या."
+        }
+      ],
+      "description_mr": "रेखाचित्रे अजून अंतिम होत आहेत. प्रत्येक खोलीची जागा अजूनही कागदावर बदलता येते."
+    },
+    "foundation": {
+      "label": "Foundation / plinth",
+      "label_mr": "पाया / जोते",
+      "description": "The footprint is fixed, but internal walls are not built yet.",
+      "cheap": [
+        "civil",
+        "plumbing",
+        "electrical",
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Check the plinth outline against the approved drawing, especially the North-East and South-West corners.",
+          "always": true,
+          "text_mr": "जोत्याची रचना मंजूर रेखाचित्राशी जुळते का ते तपासा, विशेषतः ईशान्य आणि नैऋत्य कोपरे."
+        },
+        {
+          "text": "Mark drainage and septic positions away from the North-East.",
+          "topic": {
+            "room_types": [
+              "toilet"
+            ]
+          },
+          "text_mr": "सांडपाणी आणि सेप्टिक टाकीची जागा ईशान्येपासून दूर ठेवा."
+        },
+        {
+          "text": "Underground water tank or sump: the North-East or North is traditionally preferred; confirm with your practitioner.",
+          "always": true,
+          "text_mr": "भूमिगत पाण्याची टाकी: परंपरेने ईशान्य किंवा उत्तर दिशा पसंत केली जाते; आपल्या वास्तुतज्ज्ञांकडून खात्री करा."
+        }
+      ],
+      "description_mr": "घराचा पाया निश्चित झाला आहे, पण आतील भिंती अजून बांधलेल्या नाहीत."
+    },
+    "structure": {
+      "label": "Walls / structure",
+      "label_mr": "भिंती / बांधकाम",
+      "description": "Walls and slabs are going up. Moving a wall is still possible but costs more every week.",
+      "cheap": [
+        "plumbing",
+        "electrical",
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Before the slab is cast, confirm the staircase position and direction of climb.",
+          "topic": {
+            "room_types": [
+              "staircase"
+            ]
+          },
+          "text_mr": "स्लॅब टाकण्यापूर्वी जिन्याची जागा आणि चढण्याची दिशा निश्चित करा."
+        },
+        {
+          "text": "Check window openings: more and larger openings toward North and East.",
+          "topic": {
+            "category": "directions"
+          },
+          "text_mr": "खिडक्या तपासा: उत्तर आणि पूर्वेकडे जास्त आणि मोठ्या खिडक्या असाव्यात."
+        },
+        {
+          "text": "Confirm the main door opening size and position before lintels are cast.",
+          "topic": {
+            "category": "entrance"
+          },
+          "text_mr": "लिंटेल टाकण्यापूर्वी मुख्य दरवाजाचा आकार आणि जागा निश्चित करा."
+        }
+      ],
+      "description_mr": "भिंती आणि स्लॅबचे काम सुरू आहे. भिंत हलवणे अजून शक्य आहे, पण दर आठवड्याला खर्च वाढतो."
+    },
+    "services": {
+      "label": "Plumbing & electrical",
+      "label_mr": "प्लंबिंग व विद्युत",
+      "description": "Pipes and wiring are being laid. Hob, sink, WC and switch positions can still move cheaply.",
+      "cheap": [
+        "plumbing",
+        "electrical",
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Place the gas or electrical point for the cooking range in the South-East part of the kitchen.",
+          "topic": {
+            "room_types": [
+              "kitchen"
+            ]
+          },
+          "text_mr": "शेगडीसाठी गॅस किंवा वीज जोडणी स्वयंपाकघराच्या आग्नेय भागात ठेवा."
+        },
+        {
+          "text": "Keep the sink and the cooking range apart; plan both points now.",
+          "topic": {
+            "room_types": [
+              "kitchen"
+            ]
+          },
+          "text_mr": "सिंक आणि शेगडी एकमेकांपासून दूर ठेवा; दोन्हीच्या जागा आत्ताच ठरवा."
+        },
+        {
+          "text": "Position the WC toward the West or North-West side of each toilet where the layout allows.",
+          "topic": {
+            "room_types": [
+              "toilet"
+            ]
+          },
+          "text_mr": "रचनेत शक्य असेल तिथे प्रत्येक शौचालयात शौचपात्र पश्चिम किंवा वायव्य बाजूला ठेवा."
+        },
+        {
+          "text": "Plan bedside sockets for a bed against the South or West wall of each bedroom.",
+          "topic": {
+            "room_types": [
+              "bedroom",
+              "master_bedroom"
+            ]
+          },
+          "text_mr": "प्रत्येक शयनकक्षात पलंग दक्षिण किंवा पश्चिम भिंतीलगत येईल असे धरून बाजूचे सॉकेट्स ठरवा."
+        }
+      ],
+      "description_mr": "पाईप आणि वायरिंगचे काम सुरू आहे. शेगडी, सिंक, शौचपात्र आणि स्विचची जागा अजूनही कमी खर्चात बदलता येते."
+    },
+    "finishing": {
+      "label": "Finishing / interiors",
+      "label_mr": "फिनिशिंग / अंतर्गत सजावट",
+      "description": "Flooring, paint and carpentry. Layout is fixed; colours, lighting and furniture are still open.",
+      "cheap": [
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Choose lighter colours for North-East facing rooms and corners.",
+          "always": true,
+          "text_mr": "ईशान्येकडील खोल्या आणि कोपऱ्यांसाठी फिकट रंग निवडा."
+        },
+        {
+          "text": "Plan wardrobes and heavy storage along South and West walls.",
+          "topic": {
+            "room_types": [
+              "bedroom",
+              "master_bedroom",
+              "store"
+            ]
+          },
+          "text_mr": "कपाटे आणि जड साठवण दक्षिण व पश्चिम भिंतींलगत ठेवा."
+        },
+        {
+          "text": "Fix the altar on the wall so the person praying faces East or North.",
+          "topic": {
+            "room_types": [
+              "pooja"
+            ]
+          },
+          "text_mr": "पूजा करणाऱ्याचे तोंड पूर्व किंवा उत्तरेकडे येईल अशा भिंतीवर देव्हारा बसवा."
+        },
+        {
+          "text": "Light the main entrance well and keep the threshold clean and solid.",
+          "topic": {
+            "category": "entrance"
+          },
+          "text_mr": "मुख्य प्रवेशद्वारावर चांगला प्रकाश ठेवा आणि उंबरठा स्वच्छ व मजबूत ठेवा."
+        }
+      ],
+      "description_mr": "फरशी, रंग आणि सुतारकाम. रचना निश्चित झाली आहे; रंग, प्रकाश आणि फर्निचर अजून ठरवता येतात."
+    },
+    "occupied": {
+      "label": "Ready to move / living in",
+      "label_mr": "राहण्यास तयार / राहत आहोत",
+      "description": "The house is finished. Arrangement, decor and habits are the practical levers.",
+      "cheap": [
+        "arrange",
+        "decor",
+        "habit",
+        "expert"
+      ],
+      "checklist": [
+        {
+          "text": "Use Post-Move Verification to record how each room is actually used.",
+          "always": true,
+          "text_mr": "प्रत्येक खोलीचा प्रत्यक्ष वापर नोंदवण्यासाठी 'प्रत्यक्ष घराची पडताळणी' वापरा."
+        },
+        {
+          "text": "Keep the centre of the home open and uncluttered.",
+          "topic": {
+            "zones": [
+              "C"
+            ]
+          },
+          "text_mr": "घराचा मध्य भाग मोकळा आणि पसारामुक्त ठेवा."
+        },
+        {
+          "text": "Keep toilet doors closed and the spaces dry and ventilated.",
+          "topic": {
+            "room_types": [
+              "toilet"
+            ]
+          },
+          "text_mr": "शौचालयांचे दरवाजे बंद ठेवा आणि जागा कोरडी व हवेशीर ठेवा."
+        }
+      ],
+      "description_mr": "घर पूर्ण झाले आहे. मांडणी, सजावट आणि सवयी हेच व्यावहारिक उपाय आहेत."
+    }
+  }
+}

@@ -1,0 +1,1108 @@
+{
+  "rule_set": {
+    "code": "baseline-3x3-v1",
+    "name": "Baseline Vastu rule set (3 x 3 grid)",
+    "methodology": "Traditional Vastu Shastra, simplified 9-zone reading",
+    "version": "1.0",
+    "zone_system": "grid_3x3",
+    "description": "Starter rule set for the MVP. Seeded as approved so the demo works; a Vastu practitioner should review every rule and remedy before production use.",
+    "disclaimer": "Vastu Shastra is a traditional system of architectural guidance. The findings in this report apply the rules of the selected Vastu rule set to the verified floor plan. They are recommendations from that methodology, not scientific, structural, legal or financial advice."
+  },
+  "rules": [
+    {
+      "code": "kitchen_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "kitchen",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SE"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a kitchen.",
+      "explanation": "The South-East is traditionally associated with Agni (fire), so it is the customary kitchen location.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "kitchen_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "kitchen",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "E"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a kitchen.",
+      "explanation": "The South-East is traditionally associated with Agni (fire), so it is the customary kitchen location.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "kitchen_issue_high",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "kitchen",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a kitchen.",
+      "explanation": "Traditional texts associate the North-East with water and calm and the centre with open space, so a fire element here is discouraged.",
+      "remedy_code": "kitchen_ne",
+      "status": "approved"
+    },
+    {
+      "code": "kitchen_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "kitchen",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SW",
+          "N"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a kitchen.",
+      "explanation": "Traditional texts associate the North-East with water and calm and the centre with open space, so a fire element here is discouraged.",
+      "remedy_code": "kitchen_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "kitchen_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "kitchen",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "W"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a kitchen.",
+      "explanation": "Traditional texts associate the North-East with water and calm and the centre with open space, so a fire element here is discouraged.",
+      "remedy_code": "kitchen_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "master_bedroom_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "master_bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SW"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a master bedroom.",
+      "explanation": "The South-West is traditionally linked with stability and is the customary zone for the head of the household.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "master_bedroom_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "master_bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "W"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a master bedroom.",
+      "explanation": "The South-West is traditionally linked with stability and is the customary zone for the head of the household.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "master_bedroom_issue_high",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "master_bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a master bedroom.",
+      "explanation": "Traditional guidance keeps the principal bedroom out of the light, open North-East and the fire-associated South-East.",
+      "remedy_code": "bedroom_centre",
+      "status": "approved"
+    },
+    {
+      "code": "master_bedroom_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "master_bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "SE"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a master bedroom.",
+      "explanation": "Traditional guidance keeps the principal bedroom out of the light, open North-East and the fire-associated South-East.",
+      "remedy_code": "bedroom_ne_se",
+      "status": "approved"
+    },
+    {
+      "code": "master_bedroom_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "master_bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "N",
+          "E",
+          "NW"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a master bedroom.",
+      "explanation": "Traditional guidance keeps the principal bedroom out of the light, open North-East and the fire-associated South-East.",
+      "remedy_code": "bedroom_light_zone",
+      "status": "approved"
+    },
+    {
+      "code": "bedroom_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "W",
+          "SW"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a bedroom.",
+      "explanation": "South, West and South-West are traditionally considered restful zones for bedrooms.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "bedroom_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "E"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a bedroom.",
+      "explanation": "South, West and South-West are traditionally considered restful zones for bedrooms.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "bedroom_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a bedroom.",
+      "explanation": "Traditional guidance prefers bedrooms away from the North-East and the centre of the home.",
+      "remedy_code": "bedroom_centre",
+      "status": "approved"
+    },
+    {
+      "code": "bedroom_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "bedroom",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "N",
+          "SE"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a bedroom.",
+      "explanation": "Traditional guidance prefers bedrooms away from the North-East and the centre of the home.",
+      "remedy_code": "bedroom_light_zone",
+      "status": "approved"
+    },
+    {
+      "code": "toilet_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "toilet",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "W"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a toilet or bathroom.",
+      "explanation": "North-West and West are the traditionally accepted zones for toilets and wet areas.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "toilet_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "toilet",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "SE"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a toilet or bathroom.",
+      "explanation": "North-West and West are the traditionally accepted zones for toilets and wet areas.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "toilet_issue_high",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "toilet",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a toilet or bathroom.",
+      "explanation": "The North-East and the centre are traditionally treated as the purest zones of a home; toilets there are among the most emphasised concerns.",
+      "remedy_code": "toilet_ne_centre",
+      "status": "approved"
+    },
+    {
+      "code": "toilet_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "toilet",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SW",
+          "N",
+          "E"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 3,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a toilet or bathroom.",
+      "explanation": "The North-East and the centre are traditionally treated as the purest zones of a home; toilets there are among the most emphasised concerns.",
+      "remedy_code": "toilet_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "pooja_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "pooja",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a pooja room.",
+      "explanation": "The North-East (Ishanya) is traditionally regarded as the most suitable zone for worship.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "pooja_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "pooja",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "E",
+          "N",
+          "C"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a pooja room.",
+      "explanation": "The North-East (Ishanya) is traditionally regarded as the most suitable zone for worship.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "pooja_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "pooja",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "SW",
+          "SE"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a pooja room.",
+      "explanation": "Traditional guidance prefers the pooja space toward the North-East, East or North rather than the South and South-West.",
+      "remedy_code": "pooja_south",
+      "status": "approved"
+    },
+    {
+      "code": "pooja_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "pooja",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "W",
+          "NW"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a pooja room.",
+      "explanation": "Traditional guidance prefers the pooja space toward the North-East, East or North rather than the South and South-West.",
+      "remedy_code": "pooja_west",
+      "status": "approved"
+    },
+    {
+      "code": "living_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "living",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "N",
+          "NE",
+          "E"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a living room.",
+      "explanation": "North, East and North-East are traditionally preferred for social spaces that benefit from morning light.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "living_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "living",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "W",
+          "C"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a living room.",
+      "explanation": "North, East and North-East are traditionally preferred for social spaces that benefit from morning light.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "living_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "living",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "SE",
+          "SW"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a living room.",
+      "explanation": "Traditional guidance prefers living spaces toward the North and East rather than the South-West.",
+      "remedy_code": "living_south",
+      "status": "approved"
+    },
+    {
+      "code": "dining_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "dining",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "W",
+          "E"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a dining area.",
+      "explanation": "West and East are traditionally suggested for dining areas.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "dining_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "dining",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "N",
+          "NW",
+          "S",
+          "C"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a dining area.",
+      "explanation": "West and East are traditionally suggested for dining areas.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "dining_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "dining",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SW",
+          "SE",
+          "NE"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a dining area.",
+      "explanation": "This zone is not a traditional choice for dining.",
+      "remedy_code": "dining_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "study_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "study",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "E",
+          "N",
+          "NE",
+          "W"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a study.",
+      "explanation": "East, North, North-East and West are traditionally suggested for study and focused work.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "study_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "study",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "SW"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a study.",
+      "explanation": "East, North, North-East and West are traditionally suggested for study and focused work.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "study_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "study",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "SE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a study.",
+      "explanation": "This zone is not a traditional choice for study.",
+      "remedy_code": "study_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "staircase_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "staircase",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "W",
+          "SW"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a staircase.",
+      "explanation": "South, West and South-West are traditionally suggested for staircases, which are heavy structures.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "staircase_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "staircase",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NW",
+          "SE"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a staircase.",
+      "explanation": "South, West and South-West are traditionally suggested for staircases, which are heavy structures.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "staircase_issue_high",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "staircase",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a staircase.",
+      "explanation": "Traditional guidance keeps heavy structures such as staircases away from the North-East and the centre.",
+      "remedy_code": "stairs_ne_centre",
+      "status": "approved"
+    },
+    {
+      "code": "staircase_issue_medium",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "staircase",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "N",
+          "E"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 2,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a staircase.",
+      "explanation": "Traditional guidance keeps heavy structures such as staircases away from the North-East and the centre.",
+      "remedy_code": "stairs_north_east",
+      "status": "approved"
+    },
+    {
+      "code": "store_preferred_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "store",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "SW",
+          "NW"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as preferred for a store room.",
+      "explanation": "South-West and North-West are traditional zones for storage.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "store_acceptable_positive",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "store",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "S",
+          "W"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set lists as acceptable for a store room.",
+      "explanation": "South-West and North-West are traditional zones for storage.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "store_issue_low",
+      "category": "rooms",
+      "subject_type": "room",
+      "subject": "store",
+      "condition": {
+        "type": "room_in_zone",
+        "zones": [
+          "NE",
+          "N",
+          "E",
+          "SE",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 1,
+      "finding_template": "{room} sits in the {zone_name} zone, which this rule set flags for a store room.",
+      "explanation": "Traditional guidance prefers storage away from the North-East and the centre.",
+      "remedy_code": "store_misplaced",
+      "status": "approved"
+    },
+    {
+      "code": "entrance_preferred_positive",
+      "category": "entrance",
+      "subject_type": "entrance",
+      "subject": "main_entrance",
+      "condition": {
+        "type": "entrance_in_zone",
+        "zones": [
+          "N",
+          "NE",
+          "E"
+        ]
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "The main entrance opens in the {zone_name} zone, which this rule set lists as preferred.",
+      "explanation": "North, North-East and East entrances are traditionally regarded as the most favourable.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "entrance_acceptable_positive",
+      "category": "entrance",
+      "subject_type": "entrance",
+      "subject": "main_entrance",
+      "condition": {
+        "type": "entrance_in_zone",
+        "zones": [
+          "NW",
+          "W"
+        ]
+      },
+      "outcome": "acceptable",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "The main entrance opens in the {zone_name} zone, which this rule set lists as acceptable.",
+      "explanation": "North-West and West entrances are traditionally considered acceptable.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "entrance_issue_medium",
+      "category": "entrance",
+      "subject_type": "entrance",
+      "subject": "main_entrance",
+      "condition": {
+        "type": "entrance_in_zone",
+        "zones": [
+          "S",
+          "SE"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 3,
+      "finding_template": "The main entrance opens in the {zone_name} zone, which this rule set flags.",
+      "explanation": "Traditional guidance is cautious about South and South-East entrances.",
+      "remedy_code": "entrance_south",
+      "status": "approved"
+    },
+    {
+      "code": "entrance_issue_high",
+      "category": "entrance",
+      "subject_type": "entrance",
+      "subject": "main_entrance",
+      "condition": {
+        "type": "entrance_in_zone",
+        "zones": [
+          "SW",
+          "C"
+        ]
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "The main entrance opens in the {zone_name} zone, which this rule set flags.",
+      "explanation": "A South-West entrance is among the placements traditional guidance flags most strongly.",
+      "remedy_code": "entrance_sw",
+      "status": "approved"
+    },
+    {
+      "code": "entrance_not_marked",
+      "category": "entrance",
+      "subject_type": "plan",
+      "subject": "main_entrance",
+      "condition": {
+        "type": "element_missing",
+        "element": "main_entrance"
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 0,
+      "finding_template": "No main entrance is marked, so entrance rules were skipped.",
+      "explanation": "Mark the main entrance on the verification screen to include it in the analysis.",
+      "remedy_code": "mark_entrance",
+      "status": "approved"
+    },
+    {
+      "code": "brahmasthan_open",
+      "category": "zones",
+      "subject_type": "zone",
+      "subject": "C",
+      "condition": {
+        "type": "zone_free_of",
+        "zone": "C",
+        "room_types": [
+          "toilet",
+          "staircase",
+          "kitchen",
+          "store"
+        ],
+        "min_overlap": 0.2
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 3,
+      "finding_template": "The Brahmasthan (centre) is free of toilets, staircases, kitchens and stores.",
+      "explanation": "Traditional guidance keeps the centre of the home open and unobstructed.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "brahmasthan_obstructed",
+      "category": "zones",
+      "subject_type": "zone",
+      "subject": "C",
+      "condition": {
+        "type": "room_overlaps_zone",
+        "zone": "C",
+        "room_types": [
+          "toilet",
+          "staircase",
+          "kitchen",
+          "store"
+        ],
+        "min_overlap": 0.2
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "{share} of {room} lies inside the Brahmasthan (centre) zone.",
+      "explanation": "Traditional guidance keeps the centre free of toilets, staircases, kitchens and heavy storage.",
+      "remedy_code": "centre_obstructed",
+      "status": "approved"
+    },
+    {
+      "code": "ne_toilet_overlap",
+      "category": "zones",
+      "subject_type": "zone",
+      "subject": "NE",
+      "condition": {
+        "type": "room_overlaps_zone",
+        "zone": "NE",
+        "room_types": [
+          "toilet"
+        ],
+        "min_overlap": 0.3
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 3,
+      "finding_template": "{share} of {room} lies inside the North-East zone.",
+      "explanation": "The North-East is traditionally kept the lightest and cleanest part of the home.",
+      "remedy_code": "toilet_ne_centre",
+      "status": "approved"
+    },
+    {
+      "code": "ne_zone_complete",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "NE",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "NE",
+        "min": 0.9
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "The North-East zone is complete ({coverage} of the zone is built).",
+      "explanation": "A complete, uncut North-East corner is traditionally favoured.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "ne_zone_cut",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "NE",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "NE",
+        "max": 0.6
+      },
+      "outcome": "issue",
+      "severity": "high",
+      "weight": 2,
+      "finding_template": "The North-East corner is cut: only {coverage} of the zone is inside the plan.",
+      "explanation": "A missing North-East corner is one of the layout conditions traditional guidance flags most.",
+      "remedy_code": "ne_cut",
+      "status": "approved"
+    },
+    {
+      "code": "sw_zone_complete",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "SW",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "SW",
+        "min": 0.9
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 1,
+      "finding_template": "The South-West zone is complete ({coverage} of the zone is built).",
+      "explanation": "A complete South-West corner is traditionally associated with stability.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "sw_zone_cut",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "SW",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "SW",
+        "max": 0.6
+      },
+      "outcome": "issue",
+      "severity": "medium",
+      "weight": 1,
+      "finding_template": "The South-West corner is cut: only {coverage} of the zone is inside the plan.",
+      "explanation": "Traditional guidance prefers a complete South-West corner.",
+      "remedy_code": "sw_cut",
+      "status": "approved"
+    },
+    {
+      "code": "se_nw_cut_se",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "SE",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "SE",
+        "max": 0.6
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 1,
+      "finding_template": "The South-East corner is cut: only {coverage} of the zone is inside the plan.",
+      "explanation": "Irregular corners are generally discouraged in traditional guidance.",
+      "remedy_code": "corner_cut",
+      "status": "approved"
+    },
+    {
+      "code": "se_nw_cut_nw",
+      "category": "layout",
+      "subject_type": "zone",
+      "subject": "NW",
+      "condition": {
+        "type": "zone_coverage",
+        "zone": "NW",
+        "max": 0.6
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 1,
+      "finding_template": "The North-West corner is cut: only {coverage} of the zone is inside the plan.",
+      "explanation": "Irregular corners are generally discouraged in traditional guidance.",
+      "remedy_code": "corner_cut",
+      "status": "approved"
+    },
+    {
+      "code": "windows_north_east",
+      "category": "directions",
+      "subject_type": "openings",
+      "subject": "window",
+      "condition": {
+        "type": "opening_share",
+        "kind": "window",
+        "zones": [
+          "N",
+          "NE",
+          "E"
+        ],
+        "min_share": 0.4
+      },
+      "outcome": "preferred",
+      "severity": "positive",
+      "weight": 2,
+      "finding_template": "{share} of the {count} windows face North, North-East or East.",
+      "explanation": "Traditional guidance favours more openings toward the North and East.",
+      "remedy_code": null,
+      "status": "approved"
+    },
+    {
+      "code": "windows_south_west",
+      "category": "directions",
+      "subject_type": "openings",
+      "subject": "window",
+      "condition": {
+        "type": "opening_share",
+        "kind": "window",
+        "zones": [
+          "N",
+          "NE",
+          "E"
+        ],
+        "max_share": 0.39
+      },
+      "outcome": "issue",
+      "severity": "low",
+      "weight": 2,
+      "finding_template": "Only {share} of the {count} windows face North, North-East or East.",
+      "explanation": "Traditional guidance favours more openings toward the North and East than toward the South and West.",
+      "remedy_code": "windows_balance",
+      "status": "approved"
+    }
+  ]
+}
